@@ -1,16 +1,19 @@
-const express = require('express')
-const json = require('body-parser').json()
+const express = require("express");
+const json = require("body-parser").json();
+const People = require("./people.service");
+const router = express.Router();
 
-const People = require('./people.service')
-
-const router = express.Router()
-
-router.get('/', (req, res) => {
+router.get("/", (req, res) => {
   // Return all the people currently in the queue.
-})
+  let people = People.get();
+  console.log(people);
+  return res.json(people);
+});
 
-router.post('/', json, (req, res) => {
+router.post("/", json, (req, res) => {
   // Add a new person to the queue.
-})
+  People.enqueue(req.body.person);
+  res.status(201).send();
+});
 
-module.exports = router
+module.exports = router;
