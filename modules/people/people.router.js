@@ -6,7 +6,6 @@ const router = express.Router();
 router.get("/", (req, res) => {
   // Return all the people currently in the queue.
   let people = People.get();
-  console.log(people);
   return res.json(people);
 });
 

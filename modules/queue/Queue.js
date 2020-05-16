@@ -51,7 +51,7 @@ class Queue {
     let currNode = this.first;
     let array = [];
     while (currNode !== null) {
-      console.log(currNode);
+  
       array.push(currNode.value);
       currNode = currNode.next;
     }

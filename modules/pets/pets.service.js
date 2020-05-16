@@ -20,8 +20,7 @@ module.exports = {
     let cat = pets.cats.show();
     let dog = pets.dogs.show();
     let upForAdoption = [{cat} ,  {dog}];
-    console.log(cat);
-    console.log(dog);
+
     return upForAdoption;
   },
 
