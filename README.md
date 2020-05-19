@@ -5,10 +5,14 @@
 - This shelter is based on a first come first server basis, FOR THE ANIMALS NOT YOU YOU GREEDY HUMAN. You're adopiton options are limited to the pets that have had the longest stay at the shelter out of all the pets in the shelter at the time you are visiting. Please move onto the adoption page and decide if you would like to adopt one of the wonderful pets we currently have available to you. Additionally, you must wait your turn in line before you will be presented with the ability to adopt.
 
 ## heroku link:
-
 https://petful-server-bv.herokuapp.com/
-##link to live app:
+## link to live app:
 https://petful-client-liard.now.sh/
+## link to server repo:
+https://github.com/thinkful-ei-macaw/DSA-petful-VB-server
+## link to client repo:
+https://github.com/thinkful-ei-macaw/DSA-petful-VB-client
+
 
 ## Partners: Vendy Prum and Brannen Petit
 
