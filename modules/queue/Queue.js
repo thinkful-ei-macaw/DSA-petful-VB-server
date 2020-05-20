@@ -41,12 +41,17 @@ class Queue {
 
   show() {
     // Return the next item in the queue.
-
+    if(this.first === null){
+      return; 
+    }
     return this.first.value;
   }
 
   all() {
     // Return all items in the queue.
+    if (this.first === null) {
+      return;
+    }
 
     let currNode = this.first;
     let array = [];

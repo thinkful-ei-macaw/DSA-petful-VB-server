@@ -6,7 +6,7 @@ const router = express.Router();
 router.get("/", (req, res) => {
   // Return all the people currently in the queue.
   let people = People.get();
-  return res.json(people);
+  return res.json(people||null).status(200);
 });
 
 router.post("/", json, (req, res) => {

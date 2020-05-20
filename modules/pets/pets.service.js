@@ -19,8 +19,8 @@ module.exports = {
     // Return the pets next in line to be adopted.
     let cat = pets.cats.show();
     let dog = pets.dogs.show();
-    let upForAdoption = [{cat} ,  {dog}];
-
+    let upForAdoption = [cat?{cat}:null,  dog?{dog}:null];
+    
     return upForAdoption;
   },
 

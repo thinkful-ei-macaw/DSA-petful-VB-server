@@ -11,7 +11,6 @@ store.people.forEach((person) => people.enqueue(person));
 module.exports = {
   get() {
     //traverse through queue with linkedList
-
     //return as array to send back as json
     return people.all();
   },
